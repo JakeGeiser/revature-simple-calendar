@@ -67,16 +67,16 @@ public class DbConnector {
 	}
 	
 	// make prepared statement
-		private PreparedStatement pstmt = null;
-		public PreparedStatement statePrepared(Connection C, String query) {
-			try {
-				pstmt = C.prepareStatement(query);
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			return pstmt;
+	private PreparedStatement pstmt = null;
+	public PreparedStatement statePrepared(Connection C, String query) {
+		try {
+			pstmt = C.prepareStatement(query);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		return pstmt;
+	}
 	
 	// disconnect method
 	public void disconnect() {
