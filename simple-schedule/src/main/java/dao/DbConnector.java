@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.PreparedStatement;
 import java.util.Properties;
 
 
@@ -57,13 +58,25 @@ public class DbConnector {
 	private Statement stmt = null;
 	public Statement state(Connection C) {
 		try {
-			this.stmt = C.createStatement();
+			stmt = C.createStatement();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return this.stmt;
+		return stmt;
 	}
+	
+	// make prepared statement
+		private PreparedStatement pstmt = null;
+		public PreparedStatement statePrepared(Connection C, String query) {
+			try {
+				pstmt = C.prepareStatement(query);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return pstmt;
+		}
 	
 	// disconnect method
 	public void disconnect() {
