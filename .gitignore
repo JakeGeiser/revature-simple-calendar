@@ -1,3 +1,6 @@
+# Ignore config properties file
+config.properties
+
 # Compiled class file
 *.class
 
