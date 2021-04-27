@@ -8,6 +8,10 @@ public class Todo {
 	private Date dueDate;
 	private String status;
 	
+	
+	
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -25,18 +29,18 @@ public class Todo {
 	}
 	
 	public void setId(int inputId) {
-		id = inputId;
+		this.id = inputId;
 	}
 	
 	public void setDescription(String inputDesc) {
-		description = inputDesc;
+		this.description = inputDesc;
 	}
 	
 	public void setDueDate(Date inputDate) {
-		dueDate = inputDate;
+		this.dueDate = inputDate;
 	}
 	
 	public void setStatus(String inputStatus) {
-		status = inputStatus;
+		this.status = inputStatus;
 	}
 }
