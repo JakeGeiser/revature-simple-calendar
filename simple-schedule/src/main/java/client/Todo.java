@@ -24,4 +24,19 @@ public class Todo {
 		return status;
 	}
 	
+	public void setId(int inputId) {
+		id = inputId;
+	}
+	
+	public void setDescription(String inputDesc) {
+		description = inputDesc;
+	}
+	
+	public void setDueDate(Date inputDate) {
+		dueDate = inputDate;
+	}
+	
+	public void setStatus(String inputStatus) {
+		status = inputStatus;
+	}
 }
