@@ -17,6 +17,18 @@ public class DbConnector {
 	private String user;
 	private String password;
 	
+	// Singleton instance
+//	private static DbConnector instance;
+//	
+//	private DbConnector() {}
+//	
+//	public static DbConnector getInstance() {
+//		if(instance == null) {
+//			instance = new DbConnector();
+//		}
+//		return instance;
+//	}
+	
 	
 	
 	// connect method

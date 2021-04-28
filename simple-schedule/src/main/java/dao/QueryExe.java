@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class QueryExe {
 	// connect to DB and get statement from DbConnection
+	
 	private DbConnector dbc = new DbConnector();
 	private Statement stmt = dbc.state(dbc.connect());
 
